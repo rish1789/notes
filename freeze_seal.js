@@ -1,0 +1,10 @@
+let name_age={Name:"rishabh",age:22};
+name_age["title"]="Mr";
+Object.freeze(name_age);
+name_age.age=23;
+console.log(name_age);
+let newobj={Roll_no:102,house:"green"};
+Object.seal(newobj);
+newobj.house="blue"; 
+newobj["score"]=456;
+console.log(newobj);
