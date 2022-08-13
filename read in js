@@ -1,0 +1,10 @@
+/* create a json file in run and debug and add "console"="integratedTerminal"*/
+const readline=require('require').createInterface({
+    input:process.stdin,
+    output:process.stdout,
+});
+readline.question("what is your name ?",name=>{
+     console.log(`Hi ${name}!`);
+     readline.close();
+});
+//in json file see "program"="${workspaceFolder}/file_name_of_readline_file  "
